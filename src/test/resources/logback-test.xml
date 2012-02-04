@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<!-- encoders are assigned the type ch.qos.logback.classic.encoder.PatternLayoutEncoder 
+			by default -->
+		<encoder>
+			<pattern><![CDATA[%date{HH:mm:ss} [%thread] %-5level %logger{0}:%line - %message%n]]></pattern>
+		</encoder>
+	</appender>
+
+	<root level="info">
+		<appender-ref ref="STDOUT" />
+	</root>
+
+	<logger name="com.ash2k" level="debug" />
+	<logger name="org.apache.directory.server.ldap.LdapProtocolHandler"
+		level="error" />
+	<logger name="org.apache.directory" level="warn" />
+</configuration>

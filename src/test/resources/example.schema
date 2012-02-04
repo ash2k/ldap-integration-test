@@ -1,0 +1,13 @@
+attributetype ( 1.1.2.1.1
+        NAME 'special'
+        DESC 'special'
+        EQUALITY caseIgnoreMatch
+        SUBSTR caseIgnoreSubstringsMatch
+        SYNTAX 1.3.6.1.4.1.1466.115.121.1.15 )
+
+objectclass ( 1.1.2.2.1 
+        NAME 'specialUser'
+        DESC 'Specail User'
+        SUP inetOrgPerson
+        STRUCTURAL
+        MUST special )

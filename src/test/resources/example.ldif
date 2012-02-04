@@ -1,0 +1,6 @@
+version: 1
+
+dn: ou=users,ou=example,dc=ash2k,dc=com
+objectClass: organizationalUnit
+objectClass: top
+ou: users
